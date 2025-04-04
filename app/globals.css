@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Figtree", sans-serif;
+  background-color: var(--Yellow);
+  padding: 20px;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.contenedor {
+  background-color: var(--White);
+  padding: 20px;
+  width: 98%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 0 var(--Gray-950);
+}
+@media (min-width: 1440px) {
+  .contenedor {
+    width: 400px;
+    height: 550px;
+  }
+}
+.parte-1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+.imagen {
+  margin-bottom: 10px;
+}
+.mensaje {
+  font-weight: 800;
+  background-color: var(--Yellow);
+  padding: 9px;
+  border: none;
+  margin-bottom: 8px;
+}
+.parte-1 p {
+  font-weight: 500;
+}
+.parte-1 {
+  margin-bottom: 10px;
+}
+.parte-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.parte-2 h1 {
+  font-weight: 900;
+  font-size: 22.5px;
+  margin: 5px 0;
+}
+.parte-2 p {
+  color: var(--Gray-500);
+}
+.parte-2 h1:hover {
+  color: var(--Yellow);
+  cursor: pointer;
+}
+.parte-3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.parte-3 p {
+  font-weight: 800;
+}
