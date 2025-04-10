@@ -2,7 +2,6 @@ import Image from "next/image";
 import Header from "./Header";
 import Blog from "./Blog";
 import Profile from "./Profile";
-import A from "./A";
 const Card = () => {
   return (
     <div className="contenedor">
@@ -17,7 +16,6 @@ const Card = () => {
       </div>
       <Blog />
       <Profile />
-      <A />
     </div>
   );
 };
